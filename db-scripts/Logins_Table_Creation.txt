@@ -1,0 +1,19 @@
+-- Table: public."Logins"
+
+-- DROP TABLE public."Logins";
+
+CREATE TABLE public."Logins"
+(
+    username character varying(200) COLLATE pg_catalog."default",
+    password character varying(200) COLLATE pg_catalog."default",
+    "fullName" character varying COLLATE pg_catalog."default",
+    "mobileNo" character varying COLLATE pg_catalog."default",
+    address character varying COLLATE pg_catalog."default"
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."Logins"
+    OWNER to postgres;
