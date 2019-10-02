@@ -2,14 +2,13 @@ pipeline{
     agent any
     stages{
         stage("Create Virtual Environment"){
-            // agent {
-            //     docker {
-            //         image 'python:latest' 
-            //     }
-            // }
+            agent {
+                docker {
+                    image 'python:latest' 
+                }
+            }
             steps{
-                // sh "python3.7 --version"
-                echo "====++++Creating virtual envrionment steps is running++++===="
+                sh "python3.7 --version"
             }
         }
     }
